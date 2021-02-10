@@ -18,6 +18,11 @@ close all
 %  |-> 1st order inertia moment 
 %  --> 2nd order inertia moment 
 
+% adding path to src/
+FLpath = pwd;
+FLpath = append(FLpath, "/src/");
+addpath(FLpath);
+
 %% points 
 
 % opening file where are stored all the data needed
@@ -470,3 +475,6 @@ else
     end
     
 end
+
+% removing path
+rmpath(FLpath);
